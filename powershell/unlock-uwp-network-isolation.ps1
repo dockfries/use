@@ -1,0 +1,1 @@
+foreach($app in $(Get-AppPackage).PackageFamilyName) { CheckNetIsolation.exe LoopbackExempt -a -n="$app" > $null }
